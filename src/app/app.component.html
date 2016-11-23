@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Text Module Demo</h1>
+
+<form>
+  <h3>Value of `phone`: {{phone}}</h3>
+  <input name="phone" [(ngModel)]="phone" [textMask]="{mask: mask}" type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" #pi />
+  
+</form>
